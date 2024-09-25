@@ -1,4 +1,5 @@
 import { Carousel } from '@mantine/carousel';
+import { GridAsymmetrical } from './Grid';
 
 
 const url = "https://plus.unsplash.com/premium_photo-1684820879021-c51e33511861?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -19,7 +20,7 @@ export default function Cycles(){
                 Our services
             </h1>
         </div>
-        <Carousel
+        {/* <Carousel
         withIndicators
         height={200}
         slideSize={{ base: '100%', sm: '50%', md: '33.333333%' }}
@@ -28,7 +29,8 @@ export default function Cycles(){
         align="start"
       >
             {slides}
-      </Carousel>
+      </Carousel> */}
+      <GridAsymmetrical/>
       </>
     )
 }

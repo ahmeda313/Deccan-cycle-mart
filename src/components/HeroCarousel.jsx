@@ -1,14 +1,16 @@
+import { useRef } from 'react';
+import Autoplay from 'embla-carousel-autoplay';
+
 import '@mantine/carousel/styles.css';
 import { Carousel } from '@mantine/carousel';
 import {  useState } from 'react';
+import banner1 from "../assets/banner1.jpg"
+import banner2 from "../assets/banner2.jpg"
 
 
 const images = [
-  'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png',
-  'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png',
-  'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png',
-  'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png',
-  'https://images.unsplash.com/photo-1726942371143-3afca583a72f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  banner2,
+  banner1,
 ]
 
 
@@ -17,7 +19,7 @@ export default function HeroCarousel({height}) {
     if(window.innerWidth>723){
         val = 400
     }else{
-        val = 200
+        val = 100
     }
 
     const [carouselHeight, setCarouselHeight] = useState(val)
@@ -31,12 +33,14 @@ export default function HeroCarousel({height}) {
     if(window.innerWidth>723){
         setCarouselHeight(400)
     }else{
-        setCarouselHeight(200)
+        setCarouselHeight(100)
     }
   })
+
+  const autoplay = useRef(Autoplay({ delay: 2000 }));
   
   return (
-    <Carousel  height={carouselHeight} loop>
+    <Carousel  height={carouselHeight} loop plugins={[autoplay.current]} onMouseEnter={autoplay.current.stop} onMouseLeave={autoplay.current.reset}>
       {slides}
     </Carousel>
   );

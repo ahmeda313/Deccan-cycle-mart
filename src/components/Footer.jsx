@@ -4,7 +4,7 @@ import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconMapPin } fr
 
 export function FooterSocial() {
   return (
-    <div className="pt-10 bg-slate-600 pb-8">
+    <div className="pt-10 bg-cyan-700 pb-8">
       <Container className="flex justify-between">
         {/* logo */}
         <div>

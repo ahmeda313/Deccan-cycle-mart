@@ -7,6 +7,8 @@ import Cycles from './components/Cycles';
 import About from './components/About';
 import { FooterSocial } from './components/Footer';
 import { GetInTouchSimple } from './components/Contact';
+import Others from './components/Others';
+
 
 
 function App() {
@@ -15,12 +17,13 @@ function App() {
     <>
     <NavBar/>
     <MantineProvider>
-       <main className='ms-2 me-2 mb-8'>
        <HeroCarousel/> 
-        <About/>
+       <main className='px-4 sm:px-8 mb-8'>
         <Cycles/>
-       </main>
+        <About/>
        <GetInTouchSimple/>
+       <Others/>
+       </main>
       <FooterSocial/>
     </MantineProvider>
     

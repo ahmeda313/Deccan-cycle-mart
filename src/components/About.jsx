@@ -1,3 +1,5 @@
+import img from "../assets/bicycle-transparent.png"
+
 export default function About(){
     return(
         <>
@@ -6,16 +8,22 @@ export default function About(){
                 About us
             </h1>
         </div>
-        <div className="bg-[url('https://images.unsplash.com/photo-1727162334294-170987f6b31b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] h-fit sm:h-96 flex items-center rounded-md mb-8">
-            <div className="p-6 sm:ps-8 sm:w-1/2 text-white">
+        {/*  */}
+        <div className="bg-cyan-700 h-fit sm:h-96 sm:flex items-center justify-around rounded-md mb-8">
+        <div className="pt-1 h-5/6">
+                <img src={img} alt="bicycle" className="h-full mt-8"  />
+        </div>
+
+            <div className="p-6 sm:w-1/2 text-white">
                 <h1 className="text-3xl font-semibold mb-2"> We belive in quality</h1>
                 <p className="p-1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis totam quasi autem corporis inventore impedit facere quos animi, error beatae repellat qui odio expedita voluptatum. Voluptatem expedita odio deleniti quae!
                 </p>
-                <p className="p-1">
+                <p className="hidden sm:block p-1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis totam quasi autem corporis inventore impedit facere quos animi, error beatae repellat qui odio expedita voluptatum. Voluptatem expedita odio deleniti quae!
                 </p>
             </div>
+
         </div>
         
         </>
