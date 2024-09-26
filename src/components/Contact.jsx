@@ -68,13 +68,13 @@ export function GetInTouchSimple() {
       />
 
       <Group justify="center" mt="xl">
-        <Button type="submit" size="md">
+        <Button type="submit" size="md" className='bg-yellow-300 text-black hover:bg-yellow-400 hover:text-black'>
           Send message
         </Button>
       </Group>
     </form>
     <div className='ps-2 pt-4 sm:pt-1 sm:w-1/2'>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17039.356336238223!2d78.48910739026753!3d17.50415426659509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9af4fd761e0b%3A0x36718daaf9b3af0e!2sAlwal%2C%20Secunderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1727195970527!5m2!1sen!2sin"  allowFullScreen="" className="h-60 sm:h-full w-full " loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.476465318663!2d78.51066897434424!3d17.532487698610506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb85f0d31dcc6b%3A0x40e03cb1fbed7b03!2sDECCAN%20CYCLE%20MART%20(%20sales%20%26%20service)!5e0!3m2!1sen!2sin!4v1727376736024!5m2!1sen!2sin"  allowFullScreen="" className="h-60 sm:h-full w-full " loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div>
     </>

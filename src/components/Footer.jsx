@@ -14,7 +14,7 @@ export function FooterSocial() {
             <div className='mt-2 text-gray-300 flex gap-1'>
             <IconMapPin stroke={1} size={25} className='mt-0.5' /> 
             <p className='text-xs w-[20ch]'>
-            temple alwal opposite police station 
+            Railway Employees colony, Main Road, New Bolarum, Secunderabad 500010
             </p>
             </div>
 

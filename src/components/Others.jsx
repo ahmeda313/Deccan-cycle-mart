@@ -14,9 +14,9 @@ import stryder from "../assets/brands/stryder.jpg"
 
 export default function Others(){
     return(
-        <section class="bg-cyan-700 rounded-md">
+        <section class="bg-yellow-300 rounded-md">
     <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-        <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-black  md:text-4xl">You’ll be in good company</h2>
+        <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-black  md:text-4xl ">You’ll be in good company</h2>
         <div class="grid grid-cols-2 gap-8 text-black sm:gap-12 md:grid-cols-3 lg:grid-cols-6 ">
             <img src={atlas} alt="atlas" />
             <img src={avon} alt="avon" />
